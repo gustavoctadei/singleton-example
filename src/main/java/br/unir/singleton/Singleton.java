@@ -12,6 +12,7 @@ public final class Singleton {
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
+        
         this.valor = valor;
     }
 
@@ -19,6 +20,7 @@ public final class Singleton {
         if (instance == null) {
             instance = new Singleton(valor);
         }
+        
         return instance;
     }
 }
